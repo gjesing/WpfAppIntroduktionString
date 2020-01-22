@@ -33,5 +33,10 @@ namespace WpfAppIntroduktionString
         {
             textBox2.Text = $"Teksten indeholder {classBIZ.CountAllLines(textBox1)} linjer.";
         }
+
+        private void Opg22_Click(object sender, RoutedEventArgs e)
+        {
+            textBox2.Text = $"Teksten indeholder {classBIZ.CountAllChars(textBox1)} tegn.";
+        }
     }
 }
