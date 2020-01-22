@@ -31,6 +31,7 @@ namespace WpfAppIntroduktionString
         private void Opg21_Click(object sender, RoutedEventArgs e)
         {
             classBIZ.GetTextForTextBox(textBox1);
+            textBox2.Text = $"Teksten indeholder {classBIZ.CountAllLines(textBox1)} linjer.";
         }
     }
 }
