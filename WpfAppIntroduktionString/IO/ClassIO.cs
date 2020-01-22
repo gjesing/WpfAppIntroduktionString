@@ -17,7 +17,7 @@ namespace WpfAppIntroduktionString.IO
 
         public void GetTestString(TextBox textBox)
         {
-            using (StreamReader streamReader = new StreamReader(@"C:\Users\mare0231\source\repos\WpfAppIntroduktionString\WpfAppIntroduktionString\Txt\Admiralen.txt"))
+            using (StreamReader streamReader = new StreamReader(@"..\..\Txt\Admiralen.txt"))
             {
                 textBox.Text = streamReader.ReadToEnd();
             }
