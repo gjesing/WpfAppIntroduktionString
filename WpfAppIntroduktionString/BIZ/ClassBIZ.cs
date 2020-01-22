@@ -25,5 +25,10 @@ namespace WpfAppIntroduktionString.BIZ
         {
             return textBox.LineCount;
         }
+
+        public int CountAllChars(TextBox textBox)
+        {
+            return textBox.Text.Length;
+        }
     }
 }
