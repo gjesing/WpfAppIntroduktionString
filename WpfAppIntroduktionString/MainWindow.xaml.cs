@@ -41,7 +41,7 @@ namespace WpfAppIntroduktionString
 
         private void Opg23_Click(object sender, RoutedEventArgs e)
         {
-            textBox2.Text = $"Teksten indeholder {classBIZ.CountAllVokals(textBox1)} tegn.";
+            textBox2.Text = $"Teksten indeholder {classBIZ.CountAllVokals(textBox1)} vokaler.";
         }
     }
 }
