@@ -20,5 +20,10 @@ namespace WpfAppIntroduktionString.BIZ
             ClassIO classIO = new ClassIO();
             classIO.GetTestString(textBox);
         }
+
+        public int CountAllLines(TextBox textBox)
+        {
+            return textBox.LineCount;
+        }
     }
 }
