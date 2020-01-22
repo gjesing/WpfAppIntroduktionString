@@ -43,5 +43,10 @@ namespace WpfAppIntroduktionString
         {
             textBox2.Text = $"Teksten indeholder {classBIZ.CountAllVokals(textBox1)} vokaler.";
         }
+
+        private void Opg24_Click(object sender, RoutedEventArgs e)
+        {
+            textBox2.Text = classBIZ.RemoveAllVokals(textBox1);
+        }
     }
 }
