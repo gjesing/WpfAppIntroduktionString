@@ -30,5 +30,31 @@ namespace WpfAppIntroduktionString.BIZ
         {
             return textBox.Text.Length;
         }
+
+        public int CountAllVokals(TextBox textBox)
+        {
+            char[] allChars = textBox.Text.ToCharArray();
+            int numberOfVokals = 0;
+            foreach (char character in allChars)
+            {
+                switch (character)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'y':
+                    case 'æ':
+                    case 'ø':
+                    case 'å':
+                        numberOfVokals++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return numberOfVokals;
+        }
     }
 }
