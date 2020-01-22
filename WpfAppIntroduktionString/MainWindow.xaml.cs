@@ -21,10 +21,15 @@ namespace WpfAppIntroduktionString
     /// </summary>
     public partial class MainWindow : Window
     {
+        ClassBIZ classBIZ = new ClassBIZ();
+
         public MainWindow()
         {
             InitializeComponent();
-            ClassBIZ classBIZ = new ClassBIZ();
+        }
+
+        private void Opg21_Click(object sender, RoutedEventArgs e)
+        {
             classBIZ.GetTextForTextBox(textBox1);
         }
     }
