@@ -27,8 +27,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox Grid.ColumnSpan="2" Grid.RowSpan="9" Margin="5" AcceptsReturn="True"/>
-        <TextBox Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="9" Margin="5" AcceptsReturn="True"/>
+        <TextBox Grid.ColumnSpan="2" Grid.RowSpan="9" Margin="5" Name="textBox1" AcceptsReturn="True"/>
+        <TextBox Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="9" Margin="5" Name="textBox2" AcceptsReturn="True"/>
         <Button Grid.Row="9" Margin="50,5" Name="opg21" Content="Opgave 1"/>
         <Button Grid.Column="1" Grid.Row="9" Margin="50,5" Name="opg22" Content="Opgave 2"/>
         <Button Grid.Column="2" Grid.Row="9" Margin="50,5" Name="opg23" Content="Opgave 3"/>
