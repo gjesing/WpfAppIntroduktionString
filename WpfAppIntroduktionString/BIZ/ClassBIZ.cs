@@ -56,5 +56,31 @@ namespace WpfAppIntroduktionString.BIZ
             }
             return numberOfVokals;
         }
+
+        public string RemoveAllVokals(TextBox textBox)
+        {
+            char[] allChars = textBox.Text.ToCharArray();
+            string textWithoutVokals = "";
+            foreach (char character in allChars)
+            {
+                switch (character)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'y':
+                    case 'æ':
+                    case 'ø':
+                    case 'å':
+                        break;
+                    default:
+                        textWithoutVokals += character;
+                        break;
+                }
+            }
+            return textWithoutVokals;
+        }
     }
 }
