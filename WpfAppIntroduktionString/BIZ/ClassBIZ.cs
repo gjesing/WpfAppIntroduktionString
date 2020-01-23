@@ -85,16 +85,23 @@ namespace WpfAppIntroduktionString.BIZ
 
         public string MarkAndCountWord(TextBox textBox, string word)
         {
-            string newText = textBox.Text;
-            int wordCount = 0;
-            int index = newText.IndexOf(word, StringComparison.CurrentCultureIgnoreCase);
-            while (index != -1)
+            if (String.IsNullOrWhiteSpace(word.Trim()))
             {
-                newText = newText.Insert(index, "#>");
-                wordCount++;
-                index = newText.IndexOf(word, index + 3, StringComparison.CurrentCultureIgnoreCase);
+                return "Søg efter et ord for at få det talt markeret.";
             }
-            return $"Ordet {word} blev fundet {wordCount} gange og er blevet markeret med #>\n\n{newText}";
+            else
+            {
+                string newText = textBox.Text;
+                int wordCount = 0;
+                int index = newText.IndexOf(word.Trim(), StringComparison.CurrentCultureIgnoreCase);
+                while (index != -1)
+                {
+                    newText = newText.Insert(index, "#>");
+                    wordCount++;
+                    index = newText.IndexOf(word.Trim(), index + 3, StringComparison.CurrentCultureIgnoreCase);
+                }
+                return $"Ordet {word.Trim()} blev fundet {wordCount} gange og er blevet markeret med #>\n\n{newText}";
+            }
         }
     }
 }
