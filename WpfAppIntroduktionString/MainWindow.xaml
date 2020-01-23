@@ -33,10 +33,10 @@
         <Button Grid.Column="1" Grid.Row="9" Margin="50,5" Name="opg22" Content="Opgave 2" Click="Opg22_Click"/>
         <Button Grid.Column="2" Grid.Row="9" Margin="50,5" Name="opg23" Content="Opgave 3" Click="Opg23_Click"/>
         <Button Grid.Column="3" Grid.Row="9" Margin="50,5" Name="opg24" Content="Opgave 4" Click="Opg24_Click"/>
-        <Button Grid.Row="10" Margin="50,5" Name="opg25" Content="Opgave 5"/>
+        <Button Grid.Row="10" Margin="50,5" Name="opg25" Content="Opgave 5" Click="Opg25_Click"/>
         <Button Grid.Column="1" Grid.Row="10" Margin="50,5" Name="opg26" Content="Opgave 6"/>
         <Button Grid.Column="2" Grid.Row="10" Margin="50,5" Name="opg27" Content="Opgave 7"/>
         <Button Grid.Column="3" Grid.Row="10" Margin="50,5" Name="opg28" Content="Opgave 8"/>
-        <TextBox Grid.Row="11" Margin="50,5"/>
+        <TextBox Grid.Row="11" Margin="50,5" Name="input"/>
     </Grid>
 </Window>

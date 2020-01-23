@@ -48,5 +48,10 @@ namespace WpfAppIntroduktionString
         {
             textBox2.Text = classBIZ.RemoveAllVokals(textBox1);
         }
+
+        private void Opg25_Click(object sender, RoutedEventArgs e)
+        {
+            textBox2.Text = classBIZ.MarkAndCountWord(textBox1, input.Text);
+        }
     }
 }
