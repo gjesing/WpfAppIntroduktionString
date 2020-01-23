@@ -82,5 +82,19 @@ namespace WpfAppIntroduktionString.BIZ
             }
             return textWithoutVokals;
         }
+
+        public string MarkAndCountWord(TextBox textBox, string word)
+        {
+            string newText = textBox.Text;
+            int wordCount = 0;
+            int index = newText.IndexOf(word, StringComparison.CurrentCultureIgnoreCase);
+            while (index != -1)
+            {
+                newText = newText.Insert(index, "#>");
+                wordCount++;
+                index = newText.IndexOf(word, index + 3, StringComparison.CurrentCultureIgnoreCase);
+            }
+            return $"Ordet {word} blev fundet {wordCount} gange og er blevet markeret med #>\n\n{newText}";
+        }
     }
 }
